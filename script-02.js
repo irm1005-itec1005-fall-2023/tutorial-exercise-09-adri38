@@ -11,6 +11,12 @@
 // STEP A - create your first array
 //
 
+let lotteryNumbers = [4, 46, 12, 13, 5, 8]
+
+
+
+
+
 // Let's create our first array
 // Create a variable called lotteryNumbers and assign it an array with some random numbers
 // There should be 6 numbers each one between 0-49 (just like lotto 649)
@@ -36,7 +42,10 @@
 //
 // Create a new variable called myColoursArray and add the following colours inside it:
 // "purple", "blue", "hotpink", "green", "yellow"
+let myColoursArray = new Array("purple", "blue", "hotpink", "green", "yellow");
 
+myColoursArray.push("orange");
+myColoursArray.reverse();
 
 // Now we're going to learn to use a method.
 // Arrays have built in methods that help us work with arrays.
@@ -64,6 +73,9 @@
 
 // Using the following array for the next few instructions
 let starWarsShips = ["Luke Skywalker", "Star Destroyer", "Millennium Falcon", "CR90 corvette"];
+starWarsShips[0] = "TIE Advanced x1";
+starWarsShips.pop();
+
 
 // Use array[index] to console log just the first item in the array (Luke Skywalker)
 // Expected output: "Luke Skywalker"
@@ -99,6 +111,8 @@ console.log(starWarsShips);
 
 // Array of fruits
 const fruits = ['apple', 'banana', 'orange', 'kiwi', 'mango'];
+
+const NewFruits = fruits.slice(-2);
 
 // Use the slice() method to create a new array variable called newFruits with
 // only the last two fruits in the array "kiwi", "mango"

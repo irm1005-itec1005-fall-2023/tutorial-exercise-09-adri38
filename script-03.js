@@ -14,6 +14,13 @@
 // A const variable that is a string set to "Paris"
 const vacationDestination = "Paris";
 
+if (vacationDestination === "Paris") {
+    console.log("Woowoo, escellent choice");
+}
+else {
+    console.log("Aw but still cool")
+}
+
 // Use an if statement to check if the desination is === to "Paris"
 // and if it is then output "Woohoo, excellent choice" otherwise output "Awww, but that's still cool"
 // Docs: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
@@ -31,12 +38,30 @@ const vacationDestination = "Paris";
 //
 
 // Create a const variable called studentGradeValue and assign it to the number 55
-
+const studentGradeValue = 55;
 
 // Create a let variable called studentGradeLetter and assign it to null
 // (since we don't know what it is just yet - we're going to calculate it next
 let studentGradeLetter = null;
 
+if (studentGradeValue >= 90) {
+    studentGradeLetter = "A+";
+}
+else (studentGradeValue >= 80) {
+    studentGradeLetter = "A";
+}
+else (studentGradeValue >= 70) {
+    studentGradeLetter = "B";
+}
+else (studentGradeValue >= 60) {
+    studentGradeLetter = "C";
+}
+else (studentGradeLetter >= 50) {
+    studentGradeLetter = "D"
+}
+else {
+    studentGradeLetter = "F"
+}
 // Use if and else if statements to calculate the letter grade
 // from a numberical value based on the following conditions:
 //  IF studentGradeValue greater than or equal to 90 then studentGradeLetter = "A+"
@@ -84,6 +109,11 @@ console.log(studentGradeLetter);
 // Using the following array for the next few instructions
 let starWarsShips = ["Luke Skywalker", "Star Destroyer", "Millennium Falcon", "CR90 corvette"];
 
+for (const element of starWarsShips) {
+    console.log(element);
+}
+
+
 // Create a for loop that loops through our starWarsShips array and then
 // outputs each element to the console log
 // Expected output:
@@ -112,6 +142,10 @@ let starWarsShips = ["Luke Skywalker", "Star Destroyer", "Millennium Falcon", "C
 // Using the following const array for the next few instructions
 const cities = ['New York', 'Paris', 'Tokyo', 'London', 'Sydney', 'Rio de Janeiro', 'Cape Town', 'Dubai', 'Mumbai', 'Moscow'];
 
+for (let i = 0; i < cities.length ; i++) {
+    console.log(i, cities[i]);
+}
+
 // Using a for loop with manual controls, loop through the above array and console log
 // each city and the current current array index (i value) of the loop
 // Expected output:
@@ -121,7 +155,11 @@ const cities = ['New York', 'Paris', 'Tokyo', 'London', 'Sydney', 'Rio de Janeir
 //  etc until 9 - "Moscow"
 // Hint, you can print multiple variables to the console using the "," (comma) value as a seperator
 
-
+for (let i = 0; i < cities.length ; i ++) {
+    if (cities[i] === "Paris") {
+        console.log("Found Paris at index", i);
+    }
+}
 
 // Now, lets print the index value of "Paris"
 // Loop through the array using a for loop and manual controls, and check each cities[i] entry

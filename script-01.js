@@ -12,7 +12,9 @@
 // STEP A - outputting to the console
 //
 
+let message = "hello world";
 // Declare a variable called message and assign it the value "Hello World"
+console.log(message);
 
 
 // Console log the message variable and check in your browser that you can
@@ -24,6 +26,13 @@
 //
 // STEP B - Adding two numbers together
 //
+
+let num1 = 10;
+let num2 = 50;
+
+let numTotal = num1 + num2;
+
+
 
 // Declare a variable called num1 and assign it the value 10 (note: it should be a number and not a string)
 
@@ -45,6 +54,14 @@
 //
 
 // Declare a variable called startMessage and assignment it the value of "Hello World"
+
+
+let startMessage = "HELLO WORLD ";
+let endMessage = "Joey doesn't share french fries";
+let completeMessage = startMessage + endMessage;
+
+
+
 
 
 // Declare a variable called endMessage and assignment it the value of "Joey doesn't share French Fries"
@@ -72,10 +89,14 @@
 //
 
 // Declare a constant variable (use const not let) called productPrice and assignment it the value of 5 (the number not the string)
+const productPrice = 5;
+const productQuantity = 7;
+
+const totalPrice = (productPrice * productQuantity);
 
 
 // Declare a constant variable called productQuantity and assignment it the value of 7 (the number not the string)
-
+let sentance = `You can buy ${productQuantity} coffees for $ ${totalPrice}`
 
 // Calculate the total price by createing a const variable and assignment it the price multipled by the quantity
 
@@ -89,6 +110,12 @@
 //
 // STEP C - Working with object literals
 //
+
+
+
+
+
+
 
 // Object literals allow us to "group" together related variables
 // Instead of having three variables such as
@@ -105,6 +132,18 @@
 //
 // You can then access the data using the dot notation
 // product.price <- would give us the value in the price field (4)
+
+let ward = {
+    name : "College Ward",
+    number : 2,
+    population : 45000,
+    isRural: false,
+}
+
+
+
+
+
 
 // Create an variable called ward and assign it an object literal with the following values
 //  name: "College Ward"
@@ -126,6 +165,6 @@
 
 // Console log the ward variable again and check in your browser that you can see the population
 // has increased by 10000 (should be 55000 now)
-console.log(ward); // Or console.log(ward.population)
+//console.log(ward); // Or console.log(ward.population)
 
 // CONGRATULATIONS - THIS CONCLUDES STEP 01
